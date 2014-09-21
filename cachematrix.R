@@ -44,8 +44,8 @@ cacheSolve <- function(x, ...) {
   }
   
   ## no luck this time, so let's Solve the inverse of the matrix 
-  matrix.data <- x$get()
-  invx <- solve(matrix.data, ...)
+  matrix.data = x$get()
+  invx = solve(matrix.data, ...)
   
   ## and store it in cache for next time
   x$setinvx(invx)
